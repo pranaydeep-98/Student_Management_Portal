@@ -1,0 +1,123 @@
+/* General Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    transition: 0.4s;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background: linear-gradient(rgba(13,110,253,0.7), rgba(33,37,41,0.72)),
+                url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1,
+.hero-section .lead,
+.hero-section .btn {
+    color: white;
+}
+
+.hero-section .lead {
+    color: rgba(255,255,255,0.92);
+}
+
+/* Carousel */
+
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Feature Cards */
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Card Images */
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Dashboard Cards */
+
+.dashboard-card {
+    border-radius: 15px;
+}
+
+/* Student Profile Image */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Student ID Card */
+
+.id-card {
+    border: 2px solid #0d6efd;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+}
+
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.dark-mode .card {
+    background-color: #343a40;
+    color: white;
+}
+
+.dark-mode .table {
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: black !important;
+}
+
+/* FAQ Section */
+
+.accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .carousel-img{
+        height:250px;
+    }
+
+    .profile-img{
+        width:120px;
+        height:120px;
+    }
+
+}
